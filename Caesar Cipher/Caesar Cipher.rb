@@ -4,8 +4,6 @@ num = gets.to_i
 def caesar_cipher(str, num)
   alphabet = "abcdefghijklmnopqrstuvwxyz"
   alphabet_upcase = alphabet.upcase
-
-  
   new_chars = str.split("").map do |char|
     if alphabet.include?(char)
       old_index = alphabet.index(char)
