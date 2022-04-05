@@ -3,7 +3,7 @@ num = gets.to_i
 
 def caesar_cipher(str, num)
   alphabet = "abcdefghijklmnopqrstuvwxyz"
-  alphabet_upcase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  alphabet_upcase = alphabet.upcase
 
   
   new_chars = str.split("").map do |char|
